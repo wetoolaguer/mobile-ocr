@@ -217,6 +217,7 @@ PODS:
     - React-cxxreact (= 0.61.4)
     - React-jsi (= 0.61.4)
     - ReactCommon/jscallinvoker (= 0.61.4)
+  - TesseractOCRiOS (5.0.1)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -247,6 +248,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - TesseractOCRiOS (from `git://github.com/gali8/Tesseract-OCR-iOS.git`, branch `macos-support`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -302,8 +304,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  TesseractOCRiOS:
+    :branch: macos-support
+    :git: git://github.com/gali8/Tesseract-OCR-iOS.git
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+
+CHECKOUT OPTIONS:
+  TesseractOCRiOS:
+    :commit: 3dec23bd5829af3f24418a35760e615fb9d2f14d
+    :git: git://github.com/gali8/Tesseract-OCR-iOS.git
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
@@ -331,8 +341,9 @@ SPEC CHECKSUMS:
   React-RCTText: 21934e0a51d522abcd0a275407e80af45d6fd9ec
   React-RCTVibration: 0f76400ee3cec6edb9c125da49fed279340d145a
   ReactCommon: a6a294e7028ed67b926d29551aa9394fd989c24c
+  TesseractOCRiOS: 711ac0e8b33f62f810a0c7c9f22f419068e49b41
   Yoga: ba3d99dbee6c15ea6bbe3783d1f0cb1ffb79af0f
 
-PODFILE CHECKSUM: 1eeba6ca0f09fbb39d9d9e6e286964a637914114
+PODFILE CHECKSUM: 17718c1238835ae2cc028b3655cdeca2ce1ce371
 
 COCOAPODS: 1.7.5

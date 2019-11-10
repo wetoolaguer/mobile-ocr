@@ -19,6 +19,8 @@
 		59AA2DE4FB88CC46CF5147C5 /* libPods-MobileOCR-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 447335A70BE1F7F0A00DDAEE /* libPods-MobileOCR-tvOSTests.a */; };
 		AB22B55A82CB8F05521648FB /* libPods-MobileOCR-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C089B7279458B69C8BC5D66A /* libPods-MobileOCR-tvOS.a */; };
 		C17D988BB2977E05A1E2596E /* libPods-MobileOCR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E1F4CCDA98EB5CA246E6344 /* libPods-MobileOCR.a */; };
+		ED154CD72378223100995399 /* OCR.m in Sources */ = {isa = PBXBuildFile; fileRef = ED154CD62378223100995399 /* OCR.m */; };
+		ED674D8723783E1600B6BE74 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = ED674D8623783E1600B6BE74 /* tessdata */; };
 		FF78773D5068F935A2546CFE /* libPods-MobileOCRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC516FA77B8C5B857B43B9F /* libPods-MobileOCRTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +67,11 @@
 		C089B7279458B69C8BC5D66A /* libPods-MobileOCR-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileOCR-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BD7487567F3458E0EA6605 /* Pods-MobileOCR-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileOCR-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MobileOCR-tvOS/Pods-MobileOCR-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		EBC516FA77B8C5B857B43B9F /* libPods-MobileOCRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileOCRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED154CD52378223100995399 /* OCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCR.h; sourceTree = "<group>"; };
+		ED154CD62378223100995399 /* OCR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCR.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		ED674D8623783E1600B6BE74 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,8 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				ED154CD52378223100995399 /* OCR.h */,
+				ED154CD62378223100995399 /* OCR.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -161,7 +168,6 @@
 				7A1F922EC66C35A765CC260F /* Pods-MobileOCRTests.debug.xcconfig */,
 				96E0C504FABFAB5A501DB4D4 /* Pods-MobileOCRTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +181,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				ED674D8623783E1600B6BE74 /* tessdata */,
 				13B07FAE1A68108700A75B9A /* MobileOCR */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MobileOCRTests */,
@@ -308,6 +315,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED674D8723783E1600B6BE74 /* tessdata in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -528,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED154CD72378223100995399 /* OCR.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
