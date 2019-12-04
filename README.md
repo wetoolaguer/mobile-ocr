@@ -15,8 +15,7 @@ $ cd mobile-ocr
 $ yarn install
 ```
 
-- Install iOS Dependencies
-*You may need to setup [cocoapods](https://cocoapods.org/)*
+- Install iOS Dependencies *(You may need to setup [cocoapods](https://cocoapods.org/))*
 
 ```
 $ cd ios
@@ -29,4 +28,5 @@ cd ..
 react-native run-ios
 ```
 
-You should see **"Sample Text"** on the screen. It's scanning the image ./sample_image.jpg.
+
+You should see **"Sample Text"** on the screen. It's scanning the image `./sample_image.jpg.`
